@@ -1,29 +1,22 @@
-GLMBasedRaschEstimation
+# GLMBasedRaschEstimation <img src="man/figures/logo.png" align="right" height="139" />
 
-GLMBasedRaschEstimation is an R package developed for educational psychologists and psychometricians. It provides a robust framework for estimating Rasch Model parameters using Generalized Linear Models (GLM).
-
+**GLMBasedRaschEstimation**  is an R package developed for educational psychologists and psychometricians. It provides a robust framework for estimating Rasch Model parameters using Generalized Linear Models (GLM).
 By leveraging the logistic link function within the GLM framework, this package offers an accessible yet mathematically rigorous alternative to specialized IRT software (like BILOG-MG or MINISTEP) for binary response data.
 
-Key Features
+## Key Features
 
-Data Preprocessing: Automated cleaning and sorting of binary response matrices.
+1. **Data Preprocessing**: Automated cleaning and sorting of binary response matrices.
 
-GLM Estimation: Item parameter estimation (Difficulty and Slope) using stats::glm.
+2. **GLM Estimation**: Item parameter estimation (Difficulty and Slope) using stats::glm.
 
-Rasch Logit Transformation: Conversion of predicted probabilities into Logit units for individual ability estimation.
+3. **Rasch Logit Transformation**: Conversion of predicted probabilities into Logit units for individual ability estimation.
 
-Visualization: High-quality Item Characteristic Curves (ICC) and Rasch difficulty plots.
+4. **Visualization**: High-quality Item Characteristic Curves (ICC) and Rasch difficulty plots.
 
-Ordered Reporting: Extraction of item difficulty parameters in the original sequence of the test items.
+5. **Ordered Reporting**: Extraction of item difficulty parameters in the original sequence of the test items.
 
-Authors
-
-Ahmed Samir Megahed (Maintainer) — Assistant prof. Zagazig University, Egypt
-
-Mustafa Ali Khalaf — Associate Prof. Sultan Qaboos University, Muscat, Oman
-
-Ibraheem Mohamed Mougy — Lecturer Zagazig University, Egypt
-
+## Installation
+Install the development version from GitHub:
 Installation
 
 You can install the development version of GLMBasedRaschEstimation from GitHub with:
@@ -32,7 +25,7 @@ You can install the development version of GLMBasedRaschEstimation from GitHub w
 devtools::install_github("DrAhmedSamir/GLMBasedRaschEstimation")
 
 
-Example
+##Example
 
 The following example demonstrates how to use the package for conducting a basic Rasch analysis on binary data:
 
@@ -57,3 +50,15 @@ plot_rasch_curves(probs, logits)
 
 # 6. Visualize Item Curves (Raw Scores - ICC)
 plot_item_curves(prepared$total_score, probs, results)
+
+
+## Citation
+If you use this package in your research, please cite it as:
+> **Megahed, A. S.,Khalaf, M., A. & Mougy, I., M. (2026). "GLMBasedRaschEstimation" package for estimating Rasch Model parameters using Generalized Linear Models (GLM).**
+
+## Authors
+**Dr. Ahmed Samir Megahed** (Maintainer) Assistant Professor of Educational Psychology, Faculty of Education, Zagazig University, Egypt.
+
+**Dr. Mustafa Ali Khalaf** Associate Professor Department of Psychology, College of Education Sultan Qaboos University, Muscat, Oman.
+
+**Dr. Ibraheem Mohamed Mougy** Lecturer Department of Psychology College of Education Zagazig University Egypt.
