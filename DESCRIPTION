@@ -13,3 +13,5 @@ RoxygenNote: 7.3.3
 Imports: 
     graphics,
     stats
+URL: https://github.com/DrAhmedSamir/GLMBasedRaschEstimation
+BugReports: https://github.com/DrAhmedSamir/GLMBasedRaschEstimation/issues
