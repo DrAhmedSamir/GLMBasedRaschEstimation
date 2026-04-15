@@ -71,11 +71,8 @@ plot_item_curves <- function(theta_all, Modified_prob_matrix, results) {
 #' @return A matrix of logits with an added column for row means (Student Ability).
 #' @export
 rasch_logit <- function(prob_matrix) {
-  # 1. تحويل الاحتمالات إلى لوجيت
   logit_matrix <- log(prob_matrix / (1 - prob_matrix))
-  # 2. حساب متوسط كل صف
   row_means <- rowMeans(logit_matrix, na.rm = TRUE)
-  # 3. إضافة المتوسط كعمود جديد
   final_matrix <- cbind(logit_matrix, Row_Mean_Logit = row_means)
   colnames(final_matrix)[1:ncol(logit_matrix)] <- colnames(prob_matrix)
   return(final_matrix)
