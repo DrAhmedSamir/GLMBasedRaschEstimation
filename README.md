@@ -1,4 +1,4 @@
-https://zenodo.org/account/settings/github/repository/DrAhmedSamir/GLMBasedRaschEstimation
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10.5281/zenodo.19600428.svg)](https://doi.org/10.5281/zenodo.10.5281/zenodo.19600428)
 # GLMBasedRaschEstimation <img src="man/figures/logo.png" align="right" height="139" />
 
 **GLMBasedRaschEstimation**  is an R package developed for educational psychologists and psychometricians. It provides a robust framework for estimating Rasch Model parameters using Generalized Linear Models (GLM).
