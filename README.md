@@ -54,7 +54,7 @@ plot_item_curves(prepared$total_score, probs, results)
 
 If you use this package in your research, please cite it as:
 
-**Megahed, A. S.,Khalaf, M., A. & Mougy, I., M. (2026). "GLMBasedRaschEstimation" package for estimating Rasch Model parameters using Generalized Linear Models (GLM).**
+**Megahed, A. S., Khalaf, M. A., & Mougy, I. M. (2026). GLMBasedRaschEstimation: An R package for estimating Rasch Model parameters using Generalized Linear Models (Version 0.1.0). Zenodo. https://doi.org/10.5281/zenodo.19600428**
 
 ## Authors:
 
