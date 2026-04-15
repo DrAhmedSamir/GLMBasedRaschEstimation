@@ -21,42 +21,42 @@ Installation
 
 You can install the development version of GLMBasedRaschEstimation from GitHub with:
 
-# install.packages("devtools")
+## install.packages("devtools")
 devtools::install_github("DrAhmedSamir/GLMBasedRaschEstimation")
 
-
-##Example
-
+## Example
 The following example demonstrates how to use the package for conducting a basic Rasch analysis on binary data:
-
 library(GLMBasedRaschEstimation)
 
-# 1. Prepare your binary data (Assuming 'my_data' is your 0/1 matrix)
+# 1. *Prepare your binary data (Assuming 'my_data' is your 0/1 matrix)*
 prepared <- prepare_data(my_data)
 
-# 2. Fit the Rasch-based GLM model
+# 2. *Fit the Rasch-based GLM model*
 results <- fit_binary_irt(prepared$matrix, prepared$total_score)
 
-# 3. Compute probabilities and Logit abilities
+# 3. *Compute probabilities and Logit abilities*
 probs <- compute_Modified_probabilities(results, prepared$total_score)
 logits <- rasch_logit(probs)
 
-# 4. Extract Item Difficulty Table (Logits)
+# 4. *Extract Item Difficulty Table (Logits)*
 item_diffs <- extract_rasch_difficulties_ordered(logits)
 print(item_diffs)
 
-# 5. Visualize Rasch Curves (Logit Scores)
+# 5. *Visualize Rasch Curves (Logit Scores)*
 plot_rasch_curves(probs, logits)
 
-# 6. Visualize Item Curves (Raw Scores - ICC)
+# 6. *Visualize Item Curves (Raw Scores - ICC)*
 plot_item_curves(prepared$total_score, probs, results)
 
 
-## Citation
-If you use this package in your research, please cite it as:
-> **Megahed, A. S.,Khalaf, M., A. & Mougy, I., M. (2026). "GLMBasedRaschEstimation" package for estimating Rasch Model parameters using Generalized Linear Models (GLM).**
+## Citation:
 
-## Authors
+If you use this package in your research, please cite it as:
+
+**Megahed, A. S.,Khalaf, M., A. & Mougy, I., M. (2026). "GLMBasedRaschEstimation" package for estimating Rasch Model parameters using Generalized Linear Models (GLM).**
+
+## Authors:
+
 **Dr. Ahmed Samir Megahed** (Maintainer) Assistant Professor of Educational Psychology, Faculty of Education, Zagazig University, Egypt.
 
 **Dr. Mustafa Ali Khalaf** Associate Professor Department of Psychology, College of Education Sultan Qaboos University, Muscat, Oman.
